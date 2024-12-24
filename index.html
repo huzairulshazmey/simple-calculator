@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="calculator-screen" disabled>
+        <div class="calculator-keys">
+            <!-- Row 1 -->
+            <button type="button" class="operator" value="rad|deg">Rad | Deg</button>
+            <button type="button" class="operator" value="x!">x!</button>
+            <button type="button" class="operator" value="(">(</button>
+            <button type="button" class="operator" value=")">)</button>
+            <button type="button" class="operator" value="%">%</button>
+            <button type="button" class="operator" value="C">C</button>
+            <button type="button" class="all-clear" value="AC">AC</button>
+            
+
+            <!-- Row 2 -->
+            <button type="button" class="operator" value="Inv">Inv</button>
+            <button type="button" class="operator" value="sin">sin</button>
+            <button type="button" class="operator" value="ln">ln</button>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" class="operator" value="+">+</button>
+     
+
+            <!-- Row 3 -->
+            <button type="button" class="operator" value="π">π</button>
+            <button type="button" class="operator" value="cos">cos</button>
+            <button type="button" class="operator" value="log">log</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" class="operator" value="-">−</button>
+          
+           
+
+            <!-- Row 4 -->
+            <button type="button" class="operator" value="e">e</button>
+            <button type="button" class="operator" value="tan">tan</button>
+            <button type="button" class="operator" value="√">√</button>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" class="operator" value="*">×</button>
+
+            <!-- Row 5 -->
+            <button type="button" class="operator" value="Ans">Ans</button>
+            <button type="button" class="operator" value="EXP">EXP</button>
+            <button type="button" class="operator" value="xʸ">xʸ</button>
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="equal-sign" value="=">=</button>
+            <button type="button" class="operator" value="/">÷</button>
+        
+        </div>
+
+    
+    </div>
+
+    <div class="history-container">
+        <h2>Calculation History</h2>
+        <ul class="calculation-history"></ul>
+        <button type="button" class="clear-history" value="Clear">Clear</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

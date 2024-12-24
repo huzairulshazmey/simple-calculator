@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    padding: 20px;
+    width: 900px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    color: white;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+button:not(.operator):not(.all-clear):not(.equal-sign) {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+
+
+
+.all-clear {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.equal-sign {
+    background-color: #007AFF;
+    color: white;
+}
+
+.calculation-history {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculation-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.calculation-history li:last-child {
+    border-bottom: none;
+}
+
+.calculation-history li:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #e0e0e0;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.history-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+}
+
+.calculation-history {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.calculation-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.calculation-history li:last-child {
+    border-bottom: none;
+}
+
+.clear-history {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
